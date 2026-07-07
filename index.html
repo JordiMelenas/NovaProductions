@@ -93,18 +93,25 @@
 <section class="gallery" id="portafolio">
   <span class="kicker center"><img src="assets/logo/nova-aperture.png" alt="" class="kicker-icon">Nuestro trabajo</span>
   <h2 class="center">Portafolio</h2>
-  <div class="gallery-grid">
-    <div class="g-item tall" style="background-image:url('assets/img/DSC04639.remini-enhanced.jpg');background-position:center 22%"></div>
-    <div class="g-item" style="background-image:url('assets/img/DSC05316.jpg');background-position:center 18%"></div>
-    <div class="g-item" style="background-image:url('assets/img/DSC05337.jpg');background-position:center 78%"></div>
-    <div class="g-item tall" style="background-image:url('assets/img/DSC05498.jpg');background-position:center 25%"></div>
-    <div class="g-item wide" style="background-image:url('assets/img/DSC06165.jpg');background-position:center 38%"></div>
-    <div class="g-item" style="background-image:url('assets/img/DSC05530.jpg');background-position:center 22%"></div>
-    <div class="g-item tall" style="background-image:url('assets/img/DSC05566.jpg');background-position:center 38%"></div>
-    <div class="g-item" style="background-image:url('assets/img/DSC05626.jpg');background-position:center 20%"></div>
-    <div class="g-item wide" style="background-image:url('assets/img/DSC06188.jpg');background-position:center 30%"></div>
+  <div class="gallery-grid" id="galleryGrid">
+    <button class="g-item tall" style="background-image:url('assets/img/DSC04639.remini-enhanced.jpg');background-position:center 22%" data-full="assets/img/DSC04639.remini-enhanced.jpg" aria-label="Ver foto completa"></button>
+    <button class="g-item" style="background-image:url('assets/img/DSC05316.jpg');background-position:center 18%" data-full="assets/img/DSC05316.jpg" aria-label="Ver foto completa"></button>
+    <button class="g-item" style="background-image:url('assets/img/DSC05337.jpg');background-position:center 78%" data-full="assets/img/DSC05337.jpg" aria-label="Ver foto completa"></button>
+    <button class="g-item tall" style="background-image:url('assets/img/DSC05498.jpg');background-position:center 25%" data-full="assets/img/DSC05498.jpg" aria-label="Ver foto completa"></button>
+    <button class="g-item wide" style="background-image:url('assets/img/DSC06165.jpg');background-position:center 38%" data-full="assets/img/DSC06165.jpg" aria-label="Ver foto completa"></button>
+    <button class="g-item" style="background-image:url('assets/img/DSC05530.jpg');background-position:center 22%" data-full="assets/img/DSC05530.jpg" aria-label="Ver foto completa"></button>
+    <button class="g-item tall" style="background-image:url('assets/img/DSC05566.jpg');background-position:center 38%" data-full="assets/img/DSC05566.jpg" aria-label="Ver foto completa"></button>
+    <button class="g-item" style="background-image:url('assets/img/DSC05626.jpg');background-position:center 20%" data-full="assets/img/DSC05626.jpg" aria-label="Ver foto completa"></button>
+    <button class="g-item wide" style="background-image:url('assets/img/DSC06188.jpg');background-position:center 30%" data-full="assets/img/DSC06188.jpg" aria-label="Ver foto completa"></button>
   </div>
 </section>
+
+<div class="lightbox" id="lightbox" aria-hidden="true">
+  <button class="lightbox-close" id="lightboxClose" aria-label="Cerrar">&times;</button>
+  <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Foto anterior">&#10094;</button>
+  <img class="lightbox-img" id="lightboxImg" src="" alt="Foto de boda ampliada">
+  <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Foto siguiente">&#10095;</button>
+</div>
 
 <section class="cta-final">
   <h2>¿Lista para guardar tu momento?</h2>
